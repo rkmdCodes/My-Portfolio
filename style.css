@@ -1,0 +1,482 @@
+/* Default Theme desining of Portfolio */
+
+:root {
+  --c-brand: #f83691;
+  --c-brand-rgb: 248, 54, 145;
+  --c-dark: #303050;
+  --c-body: #636383;
+  --f-main: "Bai Janjuree", sans-serif;
+  --transition: all 0.8s cubic-bezier(0.164, 0.84, 0.44, 1);
+  --shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* presets */
+#body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 500;
+  color: var(--c-body);
+  line-height: 1.7;
+}
+
+#a {
+  margin-right: 10px;
+  color: var(--c-dark);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+#a:hover {
+  color: var(--c-brand);
+}
+
+::selection {
+  color: var(--c-brand);
+}
+
+.sub-heading-intro {
+  width: 560px;
+  text-align: center;
+  align-items: center;
+  margin-left: 26%;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-weight: 700;
+  color: var(--c-dark);
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+#navbar-toggler{
+  border-radius: 0%;
+}
+
+#navbar-toggler:focus{
+ box-shadow:none;
+  
+}
+
+
+.section-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.navbar-brand {
+  color: #303050;
+  font-weight: 700;
+}
+
+.navbar.scrolled {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.section-connector {
+  position: relative;
+}
+
+.section-connector:after {
+  content: "";
+  width: 2px;
+  height: 100px;
+  background-color: var(--c-brand);
+  position: absolute;
+  top: -60px;
+  left: 50%;
+}
+
+#navbar,
+.navbar {
+  color: #303050;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: var(--transition);
+}
+
+
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+#nav-item{
+  height: 30px;
+  width: 30px;
+
+}
+#nav-item #a{
+  font-weight: 700;
+}
+
+
+
+#icon,
+.service-icon {
+  width: 36px;
+  height: 36px;
+  background-color: var(--c-brand);
+  color: white;
+  border: 2px solid var(--c-brand);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
+}
+
+#icon:hover {
+  background-color: transparent;
+  color: var(--c-brand);
+}
+
+span{
+  color: var(--c-brand);
+}
+
+#sub-heading {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--c-dark);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 3px;
+}
+
+#heading {
+  padding-top: 3.8rem;
+  font-size: 5rem;
+  font-weight: 700;
+}
+#btn-outline {
+  background-color: var(--c-brand) !important;
+  border-radius: 0% !important;
+  border: 2px solid var(--c-brand) !important;
+  color: white !important;
+}
+
+#btn-outline:hover {
+  color: var(--c-brand) !important;
+  background-color: white !important;
+  border: 2px solid var(--c-brand) !important;
+}
+
+#home {
+  background-image: url("images/hero.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#sub-heading-services {
+  text-align: center;
+  max-width: auto;
+  margin: 0 auto 60px auto;
+}
+
+#heading-service {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.text-brand{
+  color: var(--c-brand);
+}
+
+.line {
+  width: 60px;
+  height: 2px;
+  background-color: var(--c-brand);
+  display: inline-block;
+}
+
+.service-icon,
+#service-icon ,.social-icon{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-left: 0%;
+  width: 60px;
+  height: 60px;
+  background-color: var(--c-brand);
+  font-size: 28px;
+}
+
+
+.service-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+
+.custom-link {
+  align-items: center;
+  display: inline-flex;
+  text-decoration: none;
+}
+
+.custom-link span {
+  font-weight: 700;
+  color: black;
+}
+
+.custom-link i {
+  margin-left: 8px;
+
+  width: 24px;
+  height: 24px;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--c-brand);
+  border-radius: 100px;
+  transition: var(--transition);
+}
+
+.custom-link span:hover {
+  color: var(--c-brand);
+  transition: var(--transition);
+}
+
+.custom-link:hover i {
+  transform: translateX(7px);
+}
+
+/* Projects Section */
+
+.project {
+  overflow: hidden;
+  position: relative;
+}
+
+.project .content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--c-brand);
+  width: 100%;
+  height: 100%;
+  /* display:flex; */
+  text-align: center;
+  padding-top: 30%;
+}
+
+.project img,
+.project .content {
+  transition: var(--transition);
+}
+
+.project:hover .content {
+  top: 0;
+}
+
+.project:hover img{
+  transform: translateY(-100%);
+}
+
+.content .btn {
+  border-radius: 0%;
+  font-weight: 500;
+  border: 1.5px solid white;
+}
+
+#heading-work {
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.client{
+  margin-top: -1px;
+  margin-left: -4px;
+  }
+
+.client img{
+  opacity: 0.7;
+  height:30px;
+}
+
+.navbar #navbar-nav .nav-link:hover,.navbar #navbarNav .nav-link.active{
+  color:var(--c-brand);
+
+}
+
+.eduexp {
+  position: relative;
+}
+
+.eduexp::before {
+  content: '';
+  height: 100%;
+  width: 1px;
+  background-color: rgba(var(--c-brand-rgb), 0.4);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.eduexp::after {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background-color: var(--c-brand);
+  position: absolute;
+  left: -7px;
+  top: 0;
+}
+#contact .form-control {
+  border-radius: 0;
+}
+
+#contact .form-control:focus {
+  box-shadow: none;
+  border-color: var(--c-brand);
+}
+
+#contact input.form-control {
+  height: 44px;
+}
+
+
+footer {
+  background-color: var(--c-dark);
+  padding-top: 80px;
+}
+
+footer h4 {
+  color: white;
+  margin-bottom: 24px;
+}
+
+footer p,
+footer li, 
+footer li a {
+  color: rgba(255,255,255, 0.7);
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-top: 6px;
+}
+
+.footer-top {
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255, 0.1);
+}
+
+.footer-bottom {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer-bottom a {
+  color: var(--c-brand);
+}
+
+marquee{
+  color: white;
+}
+
+       /* abandoned code */
+
+
+/* <!-- Backend Dev Section       -->
+
+<!-- <div class="col col-lg-3 col-md-6 col-sm-12">
+    <div class="service py-5 px-4 border">
+      <div class="service-icon" id="service-icon">
+        <i class="fa-brands fa-node"></i>
+      </div>
+      <h5 class="service-header">Back-end Developer</h5>
+      <p>I am a disco dancer and lallan kahen he pappu se aaj allahapur chalay ke ba </p>
+      <a href="#" class="custom-link active">
+        <span>Read More</span>
+        <i class="fa-solid fa-arrow-right arrow"></i>
+      </a>
+
+    </div>
+  </div>   --> */
+/*
+<!-- Navigaiton bar -->
+    <!-- <nav id="navbar" class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Rajat Dwivedi.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home" id="a"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#" id="a">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#" id="a">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#vedio" id="a">Vedio-Intro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#contact" id="a">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav social-icons nav-item">
+            <li class="nav-item">
+              <a class="social-icons nav-link" id="icon" href=""
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="social-icons nav-link" id="icon" href=""
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="social-icons nav-link" id="icon" href=""
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="social-icons nav-link" id="icon" href=""
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->*/
