@@ -1,9 +1,9 @@
 /* Default Theme desining of Portfolio */
 
 :root {
-  --c-brand: #f83691;
+  --c-brand: #178CA4;
   --c-brand-rgb: 248, 54, 145;
-  --c-dark: #303050;
+  --c-dark: #072A40;
   --c-body: #636383;
   --f-main: "Bai Janjuree", sans-serif;
   --transition: all 0.8s cubic-bezier(0.164, 0.84, 0.44, 1);
@@ -180,7 +180,7 @@ span{
 }
 
 #home {
-  background-image: url("images/hero.jpg");
+  background-image: url("images/background.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -328,7 +328,7 @@ span{
   content: '';
   height: 100%;
   width: 1px;
-  background-color: rgba(var(--c-brand-rgb), 0.4);
+  background-color: var(--c-brand);
   position: absolute;
   left: 0;
   top: 0;
